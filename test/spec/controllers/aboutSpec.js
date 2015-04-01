@@ -1,25 +1,29 @@
 /*jshint unused: vars */
-define(['angular', 'angular-mocks', 'app-module'], function(angular, mocks, app) {
+define([
+  'angular',
+  'angular-mocks',
+    'angular-ui-router',
+  'header/header-module'
+  ],
+  function() {
   'use strict';
 
-  describe('Controller: AboutCtrl', function () {
+  describe('Header Module', function () {
 
-    // load the controller's module
-    beforeEach(module('kanbanAngularRequireApp.controllers.AboutCtrl'));
+    beforeEach(module('headerModule'));
 
-    var AboutCtrl,
+    var headerController,
       scope;
 
-    // Initialize the controller and a mock scope
     beforeEach(inject(function ($controller, $rootScope) {
       scope = $rootScope.$new();
-      AboutCtrl = $controller('AboutCtrl', {
+      headerController = $controller('HeaderController', {
         $scope: scope
       });
     }));
 
-    it('should attach a list of awesomeThings to the scope', function () {
-      expect(scope.awesomeThings.length).toBe(3);
+    it('should be defined', function () {
+      expect(headerController).toBeDefined();
     });
   });
 });

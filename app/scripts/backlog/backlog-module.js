@@ -15,7 +15,7 @@ define([
     var backlogModule = angular.module('backlogModule', []);
 
     backlogModule.controller('BacklogListController', BacklogListController);
-    backlogModule.controller('UpdateBacklogController', CreateBacklogController);
     backlogModule.controller('CreateBacklogController', CreateBacklogController);
+    backlogModule.controller('UpdateBacklogController', UpdateBacklogController);
 
   });

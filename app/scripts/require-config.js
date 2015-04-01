@@ -1,7 +1,5 @@
-define([
-    'angular'
-  ],
-  function (angular) {
+define([],
+  function () {
     'use strict';
 
     var appConfig = function ($stateProvider, $urlRouterProvider) {
