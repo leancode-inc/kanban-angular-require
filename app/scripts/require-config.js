@@ -40,7 +40,7 @@ define([],
                     views: {
                         '@app': {
                             templateUrl: 'scripts/user-story/list/user-story-list.html',
-                            controller: 'UserStoryListController as controller'
+                            controller: 'UserStoryListController as userStoryListController'
                         }
                     }
                 })
@@ -49,7 +49,7 @@ define([],
                     views: {
                         '@app': {
                             templateUrl: 'scripts/user-story/create/user-story-create.html',
-                            controller: 'UserStoryCreateController as controller'
+                            controller: 'UserStoryCreateController as userStoryCreateController'
                         }
                     }
                 });

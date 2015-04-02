@@ -6,7 +6,7 @@ define([
         'header/header-module',
         'footer/footer-module',
         'dashboard/dashboard-module',
-        'backlog/backlog-module'
+        'user-story/user-story-module'
     ],
     function (angular,
               angularUiRouter,
@@ -18,7 +18,7 @@ define([
             'headerModule',
             'footerModule',
             'dashboardModule',
-            'backlogModule'
+            'userStoryModule'
         ]);
 
 
