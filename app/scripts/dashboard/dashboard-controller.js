@@ -1,13 +1,13 @@
 define([],
-  function () {
-    'use strict';
+    function () {
+        'use strict';
 
-    var DashboardController = function () {
+        var DashboardController = function () {
 
-    };
+        };
 
-    DashboardController.$inject = [];
-    return DashboardController;
+        DashboardController.$inject = [];
+        return DashboardController;
 
-  });
+    });
 

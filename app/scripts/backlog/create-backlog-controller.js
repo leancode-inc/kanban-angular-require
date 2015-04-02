@@ -1,12 +1,12 @@
 define([],
-  function () {
-    'use strict';
+    function () {
+        'use strict';
 
-    var CreateBacklogController = function () {
+        var CreateBacklogController = function () {
 
-    };
+        };
 
-    CreateBacklogController.$inject = [];
-    return CreateBacklogController;
+        CreateBacklogController.$inject = [];
+        return CreateBacklogController;
 
-  });
+    });

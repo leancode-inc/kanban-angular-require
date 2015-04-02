@@ -1,12 +1,12 @@
 define([],
-  function () {
-    'use strict';
+    function () {
+        'use strict';
 
-    var FooterController = function () {
+        var FooterController = function () {
 
-    };
+        };
 
-    FooterController.$inject = [];
-    return FooterController;
+        FooterController.$inject = [];
+        return FooterController;
 
-  });
+    });
