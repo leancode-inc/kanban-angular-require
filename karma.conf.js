@@ -18,7 +18,7 @@ module.exports = function(config) {
       {pattern: 'app/scripts/**/*.js', included: false },
       {pattern: 'app/scripts/**/*-spec.js', included: false },
       // http://karma-runner.github.io/0.10/plus/requirejs.html
-      'test/test-main.js'
+      'test-main.js'
     ],
 
     // list of files / patterns to exclude
