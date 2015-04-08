@@ -3,7 +3,7 @@
         <li role="presentation" ui-sref-active="active">
             <a ui-sref="app.dashboard">Dashboard</a>
         </li>
-        <li role="presentation" ui-sref-active="active">
+        <li role="presentation" ng-class="{active:$state.includes('app.userStory')}">
             <a ui-sref="app.userStory.list">Backlog</a>
         </li>
     </ul>

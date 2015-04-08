@@ -33,23 +33,32 @@ define([],
                 })
                 .state('app.userStory', {
                     abstract: true,
-                    url: '/user-story'
+                    url: '/user-stories'
                 })
                 .state('app.userStory.list', {
-                    url: '/list',
+                    url: '/',
                     views: {
                         '@app': {
                             templateUrl: 'scripts/user-story/list/user-story-list.html',
-                            controller: 'UserStoryListController as userStoryListController'
+                            controller: 'UserStoryListController as controller'
+                        }
+                    }
+                })
+                .state('app.userStory.view', {
+                    url: '/:id',
+                    views: {
+                        '@app': {
+                            templateUrl: 'scripts/user-story/view/user-story.html',
+                            controller: 'UserStoryController as controller'
                         }
                     }
                 })
                 .state('app.userStory.create', {
-                    url: '/create',
+                    url: '/new',
                     views: {
                         '@app': {
                             templateUrl: 'scripts/user-story/create/user-story-create.html',
-                            controller: 'UserStoryCreateController as userStoryCreateController'
+                            controller: 'UserStoryCreateController as controller'
                         }
                     }
                 });

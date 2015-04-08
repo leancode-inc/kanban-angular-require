@@ -6,14 +6,14 @@ define([
     ], function () {
     'use strict';
 
-    describe('User Story List', function () {
+    describe('User Story View', function () {
 
         var controller;
         beforeEach(module('userStoryModule'));
 
         beforeEach(inject(function ($rootScope, $controller) {
             var $scope = $rootScope.$new();
-            controller = $controller('UserStoryListController', {
+            controller = $controller('UserStoryController', {
                 $scope: $scope
             });
         }));

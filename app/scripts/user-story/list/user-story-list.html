@@ -1,1 +1,12 @@
-<h1>This is user story list content...</h1>
+<div ng-init="controller.init()">
+    <h1>User Stories</h1>
+    <div ng-repeat="userStory in controller.userStories">
+        <div class="list-group">
+            <a ui-sref="app.userStory.view({id: userStory.id})" class="list-group-item">
+                <h4 class="list-group-item-heading">{{userStory.title}}</h4>
+                <p class="list-group-item-text">{{userStory.description}}</p>
+            </a>
+        </div>
+    </div>
+
+</div>
