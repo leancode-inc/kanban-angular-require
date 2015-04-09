@@ -1,6 +1,12 @@
 <div>
     <h3>Create new user story</h3>
-    <form action="submit">
+    <form>
         <formly-form model="controller.newUserStory" fields="controller.fields"></formly-form>
+        <button type="submit"
+               class="btn btn-primary"
+               ng-click="controller.create(controller.newUserStory)">Create</button>
     </form>
+    <div>
+        {{controller.newUserStory}}
+    </div>
 </div>

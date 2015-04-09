@@ -36,7 +36,7 @@ define([],
                     url: '/user-stories'
                 })
                 .state('app.userStory.list', {
-                    url: '/',
+                    url: '/list',
                     views: {
                         '@app': {
                             templateUrl: 'scripts/user-story/list/user-story-list.html',
@@ -45,7 +45,7 @@ define([],
                     }
                 })
                 .state('app.userStory.view', {
-                    url: '/:id',
+                    url: 'view/:id',
                     views: {
                         '@app': {
                             templateUrl: 'scripts/user-story/view/user-story.html',

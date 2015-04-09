@@ -16,10 +16,18 @@ define([], function () {
         that.fields = [
             {
                 key: 'title',
-                type: 'text',
+                type: 'input',
                 templateOptions: {
                     label: 'Title',
                     placeholder: 'Enter title here'
+                }
+            },
+            {
+                key: 'description',
+                type: 'textarea',
+                templateOptions: {
+                    label: 'Description',
+                    placeholder: 'Enter description here'
                 }
             }
         ];
