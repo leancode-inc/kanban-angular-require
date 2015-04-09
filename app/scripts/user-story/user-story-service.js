@@ -14,9 +14,14 @@ define([], function () {
             return $http.get(baseUrl + 'user-stories/' + id);
         };
 
+        var create = function (userStory) {
+            return $http.post(baseUrl + 'user-stories', userStory);
+        };
+
         return {
             getAll: getAll,
-            get: get
+            get: get,
+            create: create
         };
     }
 
