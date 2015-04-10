@@ -19,7 +19,8 @@ define([], function () {
                 type: 'input',
                 templateOptions: {
                     label: 'Title',
-                    placeholder: 'Enter title here'
+                    placeholder: 'Enter title here',
+                    required: true
                 }
             },
             {
@@ -27,7 +28,8 @@ define([], function () {
                 type: 'textarea',
                 templateOptions: {
                     label: 'Description',
-                    placeholder: 'Enter description here'
+                    placeholder: 'Enter description here',
+                    required: true
                 }
             }
         ];

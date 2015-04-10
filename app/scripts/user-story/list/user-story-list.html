@@ -1,5 +1,12 @@
 <div ng-init="controller.init()">
-    <h1>User Stories</h1>
+    <div class="row vertical-align">
+        <h3 class="col-md-8">User Stories</h3>
+        <div class="col-md-4">
+            <a class="btn btn-primary pull-right" role="button" ui-sref="app.userStory.create">
+                <i class="fa fa-plus"></i> Add User Story
+            </a>
+        </div>
+    </div>
     <div ng-repeat="userStory in controller.userStories">
         <div class="list-group">
             <a ui-sref="app.userStory.view({id: userStory.id})" class="list-group-item">

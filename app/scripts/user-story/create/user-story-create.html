@@ -1,12 +1,12 @@
 <div>
     <h3>Create new user story</h3>
-    <form>
-        <formly-form model="controller.newUserStory" fields="controller.fields"></formly-form>
+    <formly-form
+            model="controller.newUserStory"
+            fields="controller.fields"
+            form="controller.myForm">
         <button type="submit"
-               class="btn btn-primary"
-               ng-click="controller.create(controller.newUserStory)">Create</button>
-    </form>
-    <div>
-        {{controller.newUserStory}}
-    </div>
+                class="btn btn-primary"
+                ng-click="controller.create(controller.newUserStory)"
+                ng-disabled="controller.myForm.$invalid">Create</button>
+    </formly-form>
 </div>
